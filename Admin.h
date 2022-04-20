@@ -4,14 +4,15 @@ class Admin :
     public User
 {
 public:
-    Admin() {}
-    Admin(string email, string parola) :User(email, parola) {}
 
+    Admin() {}
+    Admin(string nume, string prenume, string email, string parola);
+ 
 
     void seeConnectedUsers();
     void registerNewUser(int id);
     void deleteUser(int id);
 
-    ~Admin();
+    ~Admin() ;
 };
 

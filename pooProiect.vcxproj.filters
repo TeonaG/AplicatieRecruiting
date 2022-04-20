@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\User">
+      <UniqueIdentifier>{cbd3b66d-0a78-4803-86aa-fe85f54929d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\User">
+      <UniqueIdentifier>{d427c0e2-cadb-4f1b-ba57-2ef2ec3227ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Exceptie">
+      <UniqueIdentifier>{db25f7b6-d2ae-4a66-8f13-1fad9502ebd6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\LocDeMunca">
+      <UniqueIdentifier>{c2a5e235-e705-4ac9-ac1b-125ee4db95e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Exceptie">
+      <UniqueIdentifier>{0dff5cac-941c-4874-98af-085be634f803}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\LocMunca">
+      <UniqueIdentifier>{47d12091-4614-41d2-a749-83f23af5eae2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\CV">
+      <UniqueIdentifier>{35fa8c73-bec9-4b9d-ae3b-d7a34e810e3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Recenzie">
+      <UniqueIdentifier>{f5b4f373-a1f0-43fd-9004-356492b161d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CV">
+      <UniqueIdentifier>{e4f370ab-80bb-418d-8261-6307c1858ec7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Recenzie">
+      <UniqueIdentifier>{88cf6c67-814a-4e45-8072-1a9ef513f8e6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Admin.cpp">
+      <Filter>Source Files\User</Filter>
+    </ClCompile>
+    <ClCompile Include="Aplicant.cpp">
+      <Filter>Source Files\User</Filter>
+    </ClCompile>
+    <ClCompile Include="Angajator.cpp">
+      <Filter>Source Files\User</Filter>
+    </ClCompile>
+    <ClCompile Include="CExceptie.cpp">
+      <Filter>Source Files\Exceptie</Filter>
+    </ClCompile>
+    <ClCompile Include="ILocDeMunca.cpp">
+      <Filter>Source Files\LocDeMunca</Filter>
+    </ClCompile>
+    <ClCompile Include="LocDeMunca.cpp">
+      <Filter>Source Files\LocDeMunca</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginException.cpp">
+      <Filter>Source Files\Exceptie</Filter>
+    </ClCompile>
+    <ClCompile Include="PSWException.cpp">
+      <Filter>Source Files\Exceptie</Filter>
+    </ClCompile>
+    <ClCompile Include="SQL_Manager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FactoryUser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Server.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="User.cpp">
+      <Filter>Source Files\User</Filter>
+    </ClCompile>
+    <ClCompile Include="CV.cpp">
+      <Filter>Source Files\CV</Filter>
+    </ClCompile>
+    <ClCompile Include="Recenzie.cpp">
+      <Filter>Source Files\Recenzie</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="User.h">
+      <Filter>Header Files\User</Filter>
+    </ClInclude>
+    <ClInclude Include="Aplicant.h">
+      <Filter>Header Files\User</Filter>
+    </ClInclude>
+    <ClInclude Include="Admin.h">
+      <Filter>Header Files\User</Filter>
+    </ClInclude>
+    <ClInclude Include="IUser.h">
+      <Filter>Header Files\User</Filter>
+    </ClInclude>
+    <ClInclude Include="Angajator.h">
+      <Filter>Header Files\User</Filter>
+    </ClInclude>
+    <ClInclude Include="CExceptie.h">
+      <Filter>Header Files\Exceptie</Filter>
+    </ClInclude>
+    <ClInclude Include="IExceptie.h">
+      <Filter>Header Files\Exceptie</Filter>
+    </ClInclude>
+    <ClInclude Include="ILocDeMunca.h">
+      <Filter>Header Files\LocMunca</Filter>
+    </ClInclude>
+    <ClInclude Include="LocDeMunca.h">
+      <Filter>Header Files\LocMunca</Filter>
+    </ClInclude>
+    <ClInclude Include="LoginException.h">
+      <Filter>Header Files\Exceptie</Filter>
+    </ClInclude>
+    <ClInclude Include="PSWException.h">
+      <Filter>Header Files\Exceptie</Filter>
+    </ClInclude>
+    <ClInclude Include="Server.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SQL_Manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FactoryUser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CV.h">
+      <Filter>Header Files\CV</Filter>
+    </ClInclude>
+    <ClInclude Include="ICV.h">
+      <Filter>Header Files\CV</Filter>
+    </ClInclude>
+    <ClInclude Include="Recenzie.h">
+      <Filter>Header Files\Recenzie</Filter>
+    </ClInclude>
+    <ClInclude Include="IRecenzie.h">
+      <Filter>Header Files\Recenzie</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

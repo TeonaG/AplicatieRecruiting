@@ -4,8 +4,7 @@
 #include<vector>
 class Angajator :
     public User
-{
-private:
+{private:
     string numeCompanie;
 
     vector<ILocDeMunca*>joburi;

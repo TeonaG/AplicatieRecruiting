@@ -1,13 +1,12 @@
 #pragma once
 #include "User.h"
 #include "CV.h"
-#include "Recenzie.h"
+#include"Recenzie.h"
 #include<vector>
 class Aplicant :
     public User
-{
-protected:
-    ICV* cvAplicant;
+{protected:
+    ICV *cvAplicant;
     vector<pair< IRecenzie*, int >>recenzii;
 
 public:

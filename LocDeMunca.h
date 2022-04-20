@@ -6,8 +6,7 @@ using namespace std;
 #include<string>
 class LocDeMunca :
     public ILocDeMunca
-{
-private:
+{private:
     string oras;
     string judet;
     string domeniu;
