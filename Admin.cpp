@@ -1,23 +1,35 @@
 #include "Admin.h"
+#include "client.h"
+#include "parser.h"
 
-Admin::Admin(string nume, string prenume, string email, string parola):User(email, parola)
-{  this->prenume = prenume; this->nume = nume; 
-ID++;
-this->id = ID;
-}
-
-void Admin::seeConnectedUsers()
+void Admin::registerNewUser(std::vector<std::string> v)
 {
+    Client client;
+    QString str=QString::fromStdString(parser::getInstance().parse_string(v,'/'));
+    client.trimite_mesaj(str);
 }
 
-void Admin::registerNewUser(int id)
+void Admin::deleteUser(std::string email)
 {
+	std::vector<std::string> to_send;
+	to_send.push_back("2");
+	to_send.push_back(email);
+    //conexiune_server::trimite_la_server(to_send);
 }
 
-void Admin::deleteUser(int id)
+std::vector<std::string> Admin::getInfoProfil() const
 {
+	std::vector<std::string> v;
+	v.push_back(nume);
+	v.push_back(prenume);
+	return v;
 }
 
-Admin::~Admin()
+
+void Admin::seeRegisteredUsers()
 {
+	std::vector<std::string> to_send;
+	to_send.push_back("3");
+    //conexiune_server::trimite_la_server(to_send);
 }
+

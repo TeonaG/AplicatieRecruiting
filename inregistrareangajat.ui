@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>418</width>
-    <height>468</height>
+    <width>431</width>
+    <height>550</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,7 +16,7 @@
   <property name="styleSheet">
    <string notr="true">background-color: rgb(222, 242, 241);</string>
   </property>
-  <widget class="QLineEdit" name="lineEdit_2">
+  <widget class="QLineEdit" name="lineEdit_prenume">
    <property name="geometry">
     <rect>
      <x>230</x>
@@ -30,10 +30,10 @@
 border-radius: 10px;</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_2">
+  <widget class="QLabel" name="label_prenume">
    <property name="geometry">
     <rect>
-     <x>230</x>
+     <x>264</x>
      <y>240</y>
      <width>91</width>
      <height>31</height>
@@ -41,6 +41,7 @@ border-radius: 10px;</string>
    </property>
    <property name="font">
     <font>
+     <family>New Roman</family>
      <pointsize>-1</pointsize>
      <italic>false</italic>
      <bold>false</bold>
@@ -63,7 +64,7 @@ font-size: 18px;</string>
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_4">
+  <widget class="QLineEdit" name="lineEdit_parola">
    <property name="geometry">
     <rect>
      <x>100</x>
@@ -77,7 +78,7 @@ font-size: 18px;</string>
 border-radius: 10px;</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_3">
+  <widget class="QLineEdit" name="lineEdit_email">
    <property name="geometry">
     <rect>
      <x>100</x>
@@ -91,7 +92,7 @@ border-radius: 10px;</string>
 border-radius: 10px;</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit">
+  <widget class="QLineEdit" name="lineEdit_nume">
    <property name="geometry">
     <rect>
      <x>20</x>
@@ -105,41 +106,10 @@ border-radius: 10px;</string>
 border-radius: 10px;</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_5">
+  <widget class="QLabel" name="label_nume">
    <property name="geometry">
     <rect>
-     <x>150</x>
-     <y>330</y>
-     <width>120</width>
-     <height>40</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>-1</pointsize>
-     <italic>false</italic>
-     <bold>false</bold>
-    </font>
-   </property>
-   <property name="cursor">
-    <cursorShape>PointingHandCursor</cursorShape>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(9, 52, 111);
-color: white;
-font-size: 20px;
-border-style: outset;
-border-radius: 20px;
-font: Times New Roman;</string>
-   </property>
-   <property name="text">
-    <string>Înregistrare</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_3">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
+     <x>52</x>
      <y>240</y>
      <width>91</width>
      <height>31</height>
@@ -147,6 +117,7 @@ font: Times New Roman;</string>
    </property>
    <property name="font">
     <font>
+     <family>New Roman</family>
      <pointsize>-1</pointsize>
      <italic>false</italic>
      <bold>false</bold>
@@ -169,7 +140,7 @@ font-size: 18px;</string>
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="label_4">
+  <widget class="QLabel" name="label_parola">
    <property name="geometry">
     <rect>
      <x>160</x>
@@ -180,6 +151,7 @@ font-size: 18px;</string>
    </property>
    <property name="font">
     <font>
+     <family>New Roman</family>
      <pointsize>-1</pointsize>
      <italic>false</italic>
      <bold>false</bold>
@@ -196,13 +168,13 @@ font: Times New Roman;
 font-size: 18px;</string>
    </property>
    <property name="text">
-    <string>Parola</string>
+    <string>Parolă</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="label_5">
+  <widget class="QLabel" name="label_email">
    <property name="geometry">
     <rect>
      <x>160</x>
@@ -213,6 +185,7 @@ font-size: 18px;</string>
    </property>
    <property name="font">
     <font>
+     <family>New Roman</family>
      <pointsize>-1</pointsize>
      <italic>false</italic>
      <bold>false</bold>
@@ -239,7 +212,7 @@ font-size: 18px;</string>
    <property name="geometry">
     <rect>
      <x>140</x>
-     <y>390</y>
+     <y>450</y>
      <width>171</width>
      <height>61</height>
     </rect>
@@ -249,6 +222,70 @@ font-size: 18px;</string>
    </property>
    <property name="pixmap">
     <pixmap>../PROIECT/logo_mic.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_inregistrare">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>340</y>
+     <width>120</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>New Roman</family>
+     <pointsize>-1</pointsize>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(9, 52, 111);
+color: white;
+font-size: 20px;
+border-style: outset;
+border-radius: 20px;
+font: Times New Roman;</string>
+   </property>
+   <property name="text">
+    <string>Înregistrare</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_inregistrare_2">
+   <property name="geometry">
+    <rect>
+     <x>135</x>
+     <y>390</y>
+     <width>150</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>New Roman</family>
+     <pointsize>-1</pointsize>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(9, 52, 111);
+color: white;
+font-size: 15px;
+border-style: outset;
+border-radius: 20px;
+font: Times New Roman;</string>
+   </property>
+   <property name="text">
+    <string>Aveți deja cont?</string>
    </property>
   </widget>
  </widget>

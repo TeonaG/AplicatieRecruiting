@@ -2,15 +2,13 @@
 #include "ui_paginapornire.h"
 #include "mainwindow.h"
 #include "inregistrareangajator.h"
+#include "tipuri_autentificare.h"
 
 PaginaPornire::PaginaPornire(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::PaginaPornire)
 {
     ui->setupUi(this);
-    ui->cautare_1->setPlaceholderText("Denumire sau firmă");
-    ui->cautare_2->setPlaceholderText("Județ sau oraș");
-
 }
 
 PaginaPornire::~PaginaPornire()
@@ -29,8 +27,8 @@ void PaginaPornire::on_pushButton_2_clicked()
 void PaginaPornire::on_pushButton_clicked()
 {
      hide();
-     mainwindow=new MainWindow(this);
-     mainwindow->show();
+     tipuri_autentif=new tipuri_autentificare(this);
+     tipuri_autentif->show();
 }
 
 
@@ -47,5 +45,13 @@ void PaginaPornire::on_pushButton_4_clicked()
     hide();
     alegerecont=new AlegereCont(this);
     alegerecont->show();
+}
+
+
+void PaginaPornire::on_pushButton_cautare_clicked()
+{
+    hide();
+    filtru_cautare=new filtru();
+    filtru_cautare->show();
 }
 

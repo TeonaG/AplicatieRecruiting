@@ -1,10 +1,8 @@
 #include "Angajator.h"
 
-
-
-ILocDeMunca* Angajator::getJob(int nr)
+std::vector<std::string> Angajator::getInfoProfil() const
 {
-	for (int i = 0; i < this->joburi.size(); i++)
-		if (i == nr)
-			return joburi[i];
+    std::vector<std::string> v;
+    v.push_back(numeCompanie);
+    return v;
 }

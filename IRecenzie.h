@@ -1,6 +1,7 @@
 #pragma once
 class IRecenzie
-{public:
+{
+public:
 	virtual  int getIdRecenzie() = 0;
 };
 

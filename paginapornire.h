@@ -6,6 +6,9 @@
 #include "inregistrareangajator.h"
 #include "inregistrareangajat.h"
 #include "alegerecont.h"
+#include "tipuri_autentificare.h"
+#include "filtru.h"
+
 
 namespace Ui {
 class PaginaPornire;
@@ -28,12 +31,16 @@ private slots:
 
     void on_pushButton_4_clicked();
 
+    void on_pushButton_cautare_clicked();
+
 private:
     Ui::PaginaPornire *ui;
     MainWindow*mainwindow;
     InregistrareAngajator*inreg_angajator;
     InregistrareAngajat*inreg_angajat;
     AlegereCont*alegerecont;
+    tipuri_autentificare*tipuri_autentif;
+    filtru*filtru_cautare;
 };
 
 #endif // PAGINAPORNIRE_H

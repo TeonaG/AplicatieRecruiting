@@ -44,7 +44,7 @@
 border-radius: 10px;</string>
      </property>
     </widget>
-    <widget class="QLineEdit" name="lineEdit_password">
+    <widget class="QLineEdit" name="lineEdit_parola">
      <property name="geometry">
       <rect>
        <x>130</x>
@@ -170,7 +170,7 @@ font-size: 18px;</string>
      <x>0</x>
      <y>0</y>
      <width>405</width>
-     <height>26</height>
+     <height>22</height>
     </rect>
    </property>
   </widget>

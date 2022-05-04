@@ -1,0 +1,1392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CV_Angajat</class>
+ <widget class="QDialog" name="CV_Angajat">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1490</width>
+    <height>685</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(222, 242, 241);</string>
+  </property>
+  <widget class="QLabel" name="label_email_16">
+   <property name="geometry">
+    <rect>
+     <x>1020</x>
+     <y>90</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>New Roman</family>
+     <pointsize>-1</pointsize>
+     <italic>false</italic>
+     <bold>false</bold>
+     <underline>false</underline>
+     <strikeout>false</strikeout>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(58, 175, 169);
+border-radius: 10px;
+font: Times New Roman;
+font-size: 18px;</string>
+   </property>
+   <property name="text">
+    <string>Funcția ocupată:</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_email_9">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>40</y>
+     <width>201</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>New Roman</family>
+     <pointsize>-1</pointsize>
+     <italic>false</italic>
+     <bold>false</bold>
+     <underline>false</underline>
+     <strikeout>false</strikeout>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(58, 175, 169);
+color: white;
+border-radius: 10px;
+font: Times New Roman;
+font-size: 18px;</string>
+   </property>
+   <property name="text">
+    <string>Educație și calificări</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_email_17">
+   <property name="geometry">
+    <rect>
+     <x>1240</x>
+     <y>90</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>New Roman</family>
+     <pointsize>-1</pointsize>
+     <italic>false</italic>
+     <bold>false</bold>
+     <underline>false</underline>
+     <strikeout>false</strikeout>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(58, 175, 169);
+border-radius: 10px;
+font: Times New Roman;
+font-size: 18px;</string>
+   </property>
+   <property name="text">
+    <string>Domeniu:</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_email_13">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>280</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>New Roman</family>
+     <pointsize>-1</pointsize>
+     <italic>false</italic>
+     <bold>false</bold>
+     <underline>false</underline>
+     <strikeout>false</strikeout>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(58, 175, 169);
+border-radius: 10px;
+font: Times New Roman;
+font-size: 18px;</string>
+   </property>
+   <property name="text">
+    <string>Perioada: de la</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_email_6">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>280</y>
+     <width>110</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>New Roman</family>
+     <pointsize>-1</pointsize>
+     <italic>false</italic>
+     <bold>false</bold>
+     <underline>false</underline>
+     <strikeout>false</strikeout>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(58, 175, 169);
+border-radius: 10px;
+font: Times New Roman;
+font-size: 18px;</string>
+   </property>
+   <property name="text">
+    <string>Adresă:</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_email_3">
+   <property name="geometry">
+    <rect>
+     <x>-10</x>
+     <y>90</y>
+     <width>110</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>New Roman</family>
+     <pointsize>-1</pointsize>
+     <italic>false</italic>
+     <bold>false</bold>
+     <underline>false</underline>
+     <strikeout>false</strikeout>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(58, 175, 169);
+border-radius: 10px;
+font: Times New Roman;
+font-size: 18px;</string>
+   </property>
+   <property name="text">
+    <string>Nume:</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_email_5">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>180</y>
+     <width>151</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>New Roman</family>
+     <pointsize>-1</pointsize>
+     <italic>false</italic>
+     <bold>false</bold>
+     <underline>false</underline>
+     <strikeout>false</strikeout>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(58, 175, 169);
+border-radius: 10px;
+font: Times New Roman;
+font-size: 18px;</string>
+   </property>
+   <property name="text">
+    <string>Adresă de email:</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_modificare">
+   <property name="geometry">
+    <rect>
+     <x>720</x>
+     <y>550</y>
+     <width>120</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>New Roman</family>
+     <pointsize>-1</pointsize>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(9, 52, 111);
+color: white;
+font-size: 20px;
+border-style: outset;
+border-radius: 20px;
+font: Times New Roman;</string>
+   </property>
+   <property name="text">
+    <string>Modifică</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_email_14">
+   <property name="geometry">
+    <rect>
+     <x>790</x>
+     <y>280</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>New Roman</family>
+     <pointsize>-1</pointsize>
+     <italic>false</italic>
+     <bold>false</bold>
+     <underline>false</underline>
+     <strikeout>false</strikeout>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(58, 175, 169);
+border-radius: 10px;
+font: Times New Roman;
+font-size: 18px;</string>
+   </property>
+   <property name="text">
+    <string>Perioada: până la</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_email_15">
+   <property name="geometry">
+    <rect>
+     <x>1020</x>
+     <y>40</y>
+     <width>201</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>New Roman</family>
+     <pointsize>-1</pointsize>
+     <italic>false</italic>
+     <bold>false</bold>
+     <underline>false</underline>
+     <strikeout>false</strikeout>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(58, 175, 169);
+color: white;
+border-radius: 10px;
+font: Times New Roman;
+font-size: 18px;</string>
+   </property>
+   <property name="text">
+    <string>Experiență profesională</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_email_19">
+   <property name="geometry">
+    <rect>
+     <x>1270</x>
+     <y>280</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>New Roman</family>
+     <pointsize>-1</pointsize>
+     <italic>false</italic>
+     <bold>false</bold>
+     <underline>false</underline>
+     <strikeout>false</strikeout>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(58, 175, 169);
+border-radius: 10px;
+font: Times New Roman;
+font-size: 18px;</string>
+   </property>
+   <property name="text">
+    <string>Perioada: până la</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_email">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>40</y>
+     <width>110</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>New Roman</family>
+     <pointsize>-1</pointsize>
+     <italic>false</italic>
+     <bold>false</bold>
+     <underline>false</underline>
+     <strikeout>false</strikeout>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(58, 175, 169);
+color: white;
+border-radius: 10px;
+font: Times New Roman;
+font-size: 18px;</string>
+   </property>
+   <property name="text">
+    <string>Personal</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_email_12">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>190</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>New Roman</family>
+     <pointsize>-1</pointsize>
+     <italic>false</italic>
+     <bold>false</bold>
+     <underline>false</underline>
+     <strikeout>false</strikeout>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(58, 175, 169);
+border-radius: 10px;
+font: Times New Roman;
+font-size: 18px;</string>
+   </property>
+   <property name="text">
+    <string>Instituție/Centru:</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_email_20">
+   <property name="geometry">
+    <rect>
+     <x>1020</x>
+     <y>280</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>New Roman</family>
+     <pointsize>-1</pointsize>
+     <italic>false</italic>
+     <bold>false</bold>
+     <underline>false</underline>
+     <strikeout>false</strikeout>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(58, 175, 169);
+border-radius: 10px;
+font: Times New Roman;
+font-size: 18px;</string>
+   </property>
+   <property name="text">
+    <string>Perioada: de la</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_email_11">
+   <property name="geometry">
+    <rect>
+     <x>740</x>
+     <y>90</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>New Roman</family>
+     <pointsize>-1</pointsize>
+     <italic>false</italic>
+     <bold>false</bold>
+     <underline>false</underline>
+     <strikeout>false</strikeout>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(58, 175, 169);
+border-radius: 10px;
+font: Times New Roman;
+font-size: 18px;</string>
+   </property>
+   <property name="text">
+    <string>Locul:</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_brege">
+   <property name="geometry">
+    <rect>
+     <x>1000</x>
+     <y>190</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>New Roman</family>
+     <pointsize>-1</pointsize>
+     <italic>false</italic>
+     <bold>false</bold>
+     <underline>false</underline>
+     <strikeout>false</strikeout>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(58, 175, 169);
+border-radius: 10px;
+font: Times New Roman;
+font-size: 18px;</string>
+   </property>
+   <property name="text">
+    <string>Angajator:</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_email_2">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>90</y>
+     <width>110</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>New Roman</family>
+     <pointsize>-1</pointsize>
+     <italic>false</italic>
+     <bold>false</bold>
+     <underline>false</underline>
+     <strikeout>false</strikeout>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(58, 175, 169);
+border-radius: 10px;
+font: Times New Roman;
+font-size: 18px;</string>
+   </property>
+   <property name="text">
+    <string>Prenume:</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_email_4">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>180</y>
+     <width>171</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>New Roman</family>
+     <pointsize>-1</pointsize>
+     <italic>false</italic>
+     <bold>false</bold>
+     <underline>false</underline>
+     <strikeout>false</strikeout>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(58, 175, 169);
+border-radius: 10px;
+font: Times New Roman;
+font-size: 18px;</string>
+   </property>
+   <property name="text">
+    <string>Număr de telefon:</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>710</x>
+     <y>600</y>
+     <width>141</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../PROIECT/logo_mic.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_oras">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>370</y>
+     <width>151</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>New Roman</family>
+     <pointsize>-1</pointsize>
+     <italic>false</italic>
+     <bold>false</bold>
+     <underline>false</underline>
+     <strikeout>false</strikeout>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(58, 175, 169);
+border-radius: 10px;
+font: Times New Roman;
+font-size: 18px;</string>
+   </property>
+   <property name="text">
+    <string>Oraș/Localitate</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_email_10">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>90</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>New Roman</family>
+     <pointsize>-1</pointsize>
+     <italic>false</italic>
+     <bold>false</bold>
+     <underline>false</underline>
+     <strikeout>false</strikeout>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(58, 175, 169);
+border-radius: 10px;
+font: Times New Roman;
+font-size: 18px;</string>
+   </property>
+   <property name="text">
+    <string>Studii:</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_email_7">
+   <property name="geometry">
+    <rect>
+     <x>-30</x>
+     <y>370</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>New Roman</family>
+     <pointsize>-1</pointsize>
+     <italic>false</italic>
+     <bold>false</bold>
+     <underline>false</underline>
+     <strikeout>false</strikeout>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(58, 175, 169);
+border-radius: 10px;
+font: Times New Roman;
+font-size: 18px;</string>
+   </property>
+   <property name="text">
+    <string>Județ</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_email_8">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>460</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>New Roman</family>
+     <pointsize>-1</pointsize>
+     <italic>false</italic>
+     <bold>false</bold>
+     <underline>false</underline>
+     <strikeout>false</strikeout>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(58, 175, 169);
+border-radius: 10px;
+font: Times New Roman;
+font-size: 18px;</string>
+   </property>
+   <property name="text">
+    <string>Data nașterii</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_modificare_2">
+   <property name="geometry">
+    <rect>
+     <x>720</x>
+     <y>550</y>
+     <width>120</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>New Roman</family>
+     <pointsize>-1</pointsize>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(9, 52, 111);
+color: white;
+font-size: 20px;
+border-style: outset;
+border-radius: 20px;
+font: Times New Roman;</string>
+   </property>
+   <property name="text">
+    <string>Modificare</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_nume">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>130</y>
+     <width>201</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>New Roman</family>
+     <pointsize>-1</pointsize>
+     <italic>false</italic>
+     <bold>false</bold>
+     <underline>false</underline>
+     <strikeout>false</strikeout>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(58, 175, 169);
+border-radius: 10px;
+font: Times New Roman;
+font-size: 18px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_prenume">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>130</y>
+     <width>201</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>New Roman</family>
+     <pointsize>-1</pointsize>
+     <italic>false</italic>
+     <bold>false</bold>
+     <underline>false</underline>
+     <strikeout>false</strikeout>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(58, 175, 169);
+border-radius: 10px;
+font: Times New Roman;
+font-size: 18px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_nr_tel">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>230</y>
+     <width>201</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>New Roman</family>
+     <pointsize>-1</pointsize>
+     <italic>false</italic>
+     <bold>false</bold>
+     <underline>false</underline>
+     <strikeout>false</strikeout>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(58, 175, 169);
+border-radius: 10px;
+font: Times New Roman;
+font-size: 18px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_adresa_email">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>220</y>
+     <width>201</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>New Roman</family>
+     <pointsize>-1</pointsize>
+     <italic>false</italic>
+     <bold>false</bold>
+     <underline>false</underline>
+     <strikeout>false</strikeout>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(58, 175, 169);
+border-radius: 10px;
+font: Times New Roman;
+font-size: 18px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_adresa">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>320</y>
+     <width>451</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>New Roman</family>
+     <pointsize>-1</pointsize>
+     <italic>false</italic>
+     <bold>false</bold>
+     <underline>false</underline>
+     <strikeout>false</strikeout>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(58, 175, 169);
+border-radius: 10px;
+font: Times New Roman;
+font-size: 18px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_judet">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>420</y>
+     <width>201</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>New Roman</family>
+     <pointsize>-1</pointsize>
+     <italic>false</italic>
+     <bold>false</bold>
+     <underline>false</underline>
+     <strikeout>false</strikeout>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(58, 175, 169);
+border-radius: 10px;
+font: Times New Roman;
+font-size: 18px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_oras_2">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>420</y>
+     <width>201</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>New Roman</family>
+     <pointsize>-1</pointsize>
+     <italic>false</italic>
+     <bold>false</bold>
+     <underline>false</underline>
+     <strikeout>false</strikeout>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(58, 175, 169);
+border-radius: 10px;
+font: Times New Roman;
+font-size: 18px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_data_nastere">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>490</y>
+     <width>201</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>New Roman</family>
+     <pointsize>-1</pointsize>
+     <italic>false</italic>
+     <bold>false</bold>
+     <underline>false</underline>
+     <strikeout>false</strikeout>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(58, 175, 169);
+border-radius: 10px;
+font: Times New Roman;
+font-size: 18px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_studii">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>140</y>
+     <width>201</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>New Roman</family>
+     <pointsize>-1</pointsize>
+     <italic>false</italic>
+     <bold>false</bold>
+     <underline>false</underline>
+     <strikeout>false</strikeout>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(58, 175, 169);
+border-radius: 10px;
+font: Times New Roman;
+font-size: 18px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_loc_studii">
+   <property name="geometry">
+    <rect>
+     <x>790</x>
+     <y>130</y>
+     <width>201</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>New Roman</family>
+     <pointsize>-1</pointsize>
+     <italic>false</italic>
+     <bold>false</bold>
+     <underline>false</underline>
+     <strikeout>false</strikeout>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(58, 175, 169);
+border-radius: 10px;
+font: Times New Roman;
+font-size: 18px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_institutie">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>230</y>
+     <width>481</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>New Roman</family>
+     <pointsize>-1</pointsize>
+     <italic>false</italic>
+     <bold>false</bold>
+     <underline>false</underline>
+     <strikeout>false</strikeout>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(58, 175, 169);
+border-radius: 10px;
+font: Times New Roman;
+font-size: 18px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_per_start_studii">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>330</y>
+     <width>201</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>New Roman</family>
+     <pointsize>-1</pointsize>
+     <italic>false</italic>
+     <bold>false</bold>
+     <underline>false</underline>
+     <strikeout>false</strikeout>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(58, 175, 169);
+border-radius: 10px;
+font: Times New Roman;
+font-size: 18px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_final_studii">
+   <property name="geometry">
+    <rect>
+     <x>780</x>
+     <y>330</y>
+     <width>201</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>New Roman</family>
+     <pointsize>-1</pointsize>
+     <italic>false</italic>
+     <bold>false</bold>
+     <underline>false</underline>
+     <strikeout>false</strikeout>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(58, 175, 169);
+border-radius: 10px;
+font: Times New Roman;
+font-size: 18px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_functie">
+   <property name="geometry">
+    <rect>
+     <x>1020</x>
+     <y>130</y>
+     <width>201</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>New Roman</family>
+     <pointsize>-1</pointsize>
+     <italic>false</italic>
+     <bold>false</bold>
+     <underline>false</underline>
+     <strikeout>false</strikeout>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(58, 175, 169);
+border-radius: 10px;
+font: Times New Roman;
+font-size: 18px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_domeniu">
+   <property name="geometry">
+    <rect>
+     <x>1260</x>
+     <y>130</y>
+     <width>201</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>New Roman</family>
+     <pointsize>-1</pointsize>
+     <italic>false</italic>
+     <bold>false</bold>
+     <underline>false</underline>
+     <strikeout>false</strikeout>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(58, 175, 169);
+border-radius: 10px;
+font: Times New Roman;
+font-size: 18px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_angajator">
+   <property name="geometry">
+    <rect>
+     <x>1010</x>
+     <y>230</y>
+     <width>451</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>New Roman</family>
+     <pointsize>-1</pointsize>
+     <italic>false</italic>
+     <bold>false</bold>
+     <underline>false</underline>
+     <strikeout>false</strikeout>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(58, 175, 169);
+border-radius: 10px;
+font: Times New Roman;
+font-size: 18px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_per_final_exp">
+   <property name="geometry">
+    <rect>
+     <x>1270</x>
+     <y>320</y>
+     <width>201</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>New Roman</family>
+     <pointsize>-1</pointsize>
+     <italic>false</italic>
+     <bold>false</bold>
+     <underline>false</underline>
+     <strikeout>false</strikeout>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(58, 175, 169);
+border-radius: 10px;
+font: Times New Roman;
+font-size: 18px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_per_start_exp">
+   <property name="geometry">
+    <rect>
+     <x>1020</x>
+     <y>320</y>
+     <width>201</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>New Roman</family>
+     <pointsize>-1</pointsize>
+     <italic>false</italic>
+     <bold>false</bold>
+     <underline>false</underline>
+     <strikeout>false</strikeout>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(58, 175, 169);
+border-radius: 10px;
+font: Times New Roman;
+font-size: 18px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

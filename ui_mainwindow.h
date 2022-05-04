@@ -28,7 +28,7 @@ public:
     QWidget *centralwidget;
     QGroupBox *groupBox;
     QLineEdit *lineEdit_email;
-    QLineEdit *lineEdit_password;
+    QLineEdit *lineEdit_parola;
     QPushButton *pushButton_login;
     QLabel *label;
     QLabel *label_2;
@@ -54,10 +54,10 @@ public:
         lineEdit_email->setGeometry(QRect(130, 120, 165, 28));
         lineEdit_email->setStyleSheet(QString::fromUtf8("background-color: white;\n"
 "border-radius: 10px;"));
-        lineEdit_password = new QLineEdit(groupBox);
-        lineEdit_password->setObjectName(QString::fromUtf8("lineEdit_password"));
-        lineEdit_password->setGeometry(QRect(130, 170, 165, 28));
-        lineEdit_password->setStyleSheet(QString::fromUtf8("background-color: white;\n"
+        lineEdit_parola = new QLineEdit(groupBox);
+        lineEdit_parola->setObjectName(QString::fromUtf8("lineEdit_parola"));
+        lineEdit_parola->setGeometry(QRect(130, 170, 165, 28));
+        lineEdit_parola->setStyleSheet(QString::fromUtf8("background-color: white;\n"
 "border-radius: 10px;\n"
 ""));
         pushButton_login = new QPushButton(groupBox);
@@ -100,7 +100,7 @@ public:
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
-        menubar->setGeometry(QRect(0, 0, 405, 26));
+        menubar->setGeometry(QRect(0, 0, 405, 22));
         MainWindow->setMenuBar(menubar);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName(QString::fromUtf8("statusbar"));

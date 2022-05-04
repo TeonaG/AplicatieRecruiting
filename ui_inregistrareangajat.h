@@ -21,107 +21,121 @@ QT_BEGIN_NAMESPACE
 class Ui_InregistrareAngajat
 {
 public:
-    QLineEdit *lineEdit_2;
-    QLabel *label_2;
-    QLineEdit *lineEdit_4;
-    QLineEdit *lineEdit_3;
-    QLineEdit *lineEdit;
-    QPushButton *pushButton_5;
-    QLabel *label_3;
-    QLabel *label_4;
-    QLabel *label_5;
+    QLineEdit *lineEdit_prenume;
+    QLabel *label_prenume;
+    QLineEdit *lineEdit_parola;
+    QLineEdit *lineEdit_email;
+    QLineEdit *lineEdit_nume;
+    QLabel *label_nume;
+    QLabel *label_parola;
+    QLabel *label_email;
     QLabel *label;
+    QPushButton *pushButton_inregistrare;
+    QPushButton *pushButton_inregistrare_2;
 
     void setupUi(QDialog *InregistrareAngajat)
     {
         if (InregistrareAngajat->objectName().isEmpty())
             InregistrareAngajat->setObjectName(QString::fromUtf8("InregistrareAngajat"));
-        InregistrareAngajat->resize(418, 468);
+        InregistrareAngajat->resize(431, 550);
         InregistrareAngajat->setStyleSheet(QString::fromUtf8("background-color: rgb(222, 242, 241);"));
-        lineEdit_2 = new QLineEdit(InregistrareAngajat);
-        lineEdit_2->setObjectName(QString::fromUtf8("lineEdit_2"));
-        lineEdit_2->setGeometry(QRect(230, 280, 161, 26));
-        lineEdit_2->setStyleSheet(QString::fromUtf8("background-color: white;\n"
+        lineEdit_prenume = new QLineEdit(InregistrareAngajat);
+        lineEdit_prenume->setObjectName(QString::fromUtf8("lineEdit_prenume"));
+        lineEdit_prenume->setGeometry(QRect(230, 280, 161, 26));
+        lineEdit_prenume->setStyleSheet(QString::fromUtf8("background-color: white;\n"
 "border-radius: 10px;"));
-        label_2 = new QLabel(InregistrareAngajat);
-        label_2->setObjectName(QString::fromUtf8("label_2"));
-        label_2->setGeometry(QRect(230, 240, 91, 31));
+        label_prenume = new QLabel(InregistrareAngajat);
+        label_prenume->setObjectName(QString::fromUtf8("label_prenume"));
+        label_prenume->setGeometry(QRect(230, 240, 91, 31));
         QFont font;
+        font.setFamily(QString::fromUtf8("New Roman"));
         font.setBold(false);
         font.setItalic(false);
         font.setUnderline(false);
         font.setStrikeOut(false);
         font.setKerning(true);
-        label_2->setFont(font);
-        label_2->setStyleSheet(QString::fromUtf8("background-color: rgb(58, 175, 169);\n"
+        label_prenume->setFont(font);
+        label_prenume->setStyleSheet(QString::fromUtf8("background-color: rgb(58, 175, 169);\n"
 "color: white;\n"
 "border-radius: 10px;\n"
 "font: Times New Roman;\n"
 "font-size: 18px;"));
-        label_2->setAlignment(Qt::AlignCenter);
-        lineEdit_4 = new QLineEdit(InregistrareAngajat);
-        lineEdit_4->setObjectName(QString::fromUtf8("lineEdit_4"));
-        lineEdit_4->setGeometry(QRect(100, 170, 221, 26));
-        lineEdit_4->setStyleSheet(QString::fromUtf8("background-color: white;\n"
+        label_prenume->setAlignment(Qt::AlignCenter);
+        lineEdit_parola = new QLineEdit(InregistrareAngajat);
+        lineEdit_parola->setObjectName(QString::fromUtf8("lineEdit_parola"));
+        lineEdit_parola->setGeometry(QRect(100, 170, 221, 26));
+        lineEdit_parola->setStyleSheet(QString::fromUtf8("background-color: white;\n"
 "border-radius: 10px;"));
-        lineEdit_3 = new QLineEdit(InregistrareAngajat);
-        lineEdit_3->setObjectName(QString::fromUtf8("lineEdit_3"));
-        lineEdit_3->setGeometry(QRect(100, 70, 221, 26));
-        lineEdit_3->setStyleSheet(QString::fromUtf8("background-color: white;\n"
+        lineEdit_email = new QLineEdit(InregistrareAngajat);
+        lineEdit_email->setObjectName(QString::fromUtf8("lineEdit_email"));
+        lineEdit_email->setGeometry(QRect(100, 70, 221, 26));
+        lineEdit_email->setStyleSheet(QString::fromUtf8("background-color: white;\n"
 "border-radius: 10px;"));
-        lineEdit = new QLineEdit(InregistrareAngajat);
-        lineEdit->setObjectName(QString::fromUtf8("lineEdit"));
-        lineEdit->setGeometry(QRect(20, 280, 161, 26));
-        lineEdit->setStyleSheet(QString::fromUtf8("background-color: white;\n"
+        lineEdit_nume = new QLineEdit(InregistrareAngajat);
+        lineEdit_nume->setObjectName(QString::fromUtf8("lineEdit_nume"));
+        lineEdit_nume->setGeometry(QRect(20, 280, 161, 26));
+        lineEdit_nume->setStyleSheet(QString::fromUtf8("background-color: white;\n"
 "border-radius: 10px;"));
-        pushButton_5 = new QPushButton(InregistrareAngajat);
-        pushButton_5->setObjectName(QString::fromUtf8("pushButton_5"));
-        pushButton_5->setGeometry(QRect(150, 330, 120, 40));
+        label_nume = new QLabel(InregistrareAngajat);
+        label_nume->setObjectName(QString::fromUtf8("label_nume"));
+        label_nume->setGeometry(QRect(20, 240, 91, 31));
+        label_nume->setFont(font);
+        label_nume->setStyleSheet(QString::fromUtf8("background-color: rgb(58, 175, 169);\n"
+"color: white;\n"
+"border-radius: 10px;\n"
+"font: Times New Roman;\n"
+"font-size: 18px;"));
+        label_nume->setAlignment(Qt::AlignCenter);
+        label_parola = new QLabel(InregistrareAngajat);
+        label_parola->setObjectName(QString::fromUtf8("label_parola"));
+        label_parola->setGeometry(QRect(160, 130, 91, 31));
+        label_parola->setFont(font);
+        label_parola->setStyleSheet(QString::fromUtf8("background-color: rgb(58, 175, 169);\n"
+"color: white;\n"
+"border-radius: 10px;\n"
+"font: Times New Roman;\n"
+"font-size: 18px;"));
+        label_parola->setAlignment(Qt::AlignCenter);
+        label_email = new QLabel(InregistrareAngajat);
+        label_email->setObjectName(QString::fromUtf8("label_email"));
+        label_email->setGeometry(QRect(160, 30, 91, 31));
+        label_email->setFont(font);
+        label_email->setStyleSheet(QString::fromUtf8("background-color: rgb(58, 175, 169);\n"
+"color: white;\n"
+"border-radius: 10px;\n"
+"font: Times New Roman;\n"
+"font-size: 18px;"));
+        label_email->setAlignment(Qt::AlignCenter);
+        label = new QLabel(InregistrareAngajat);
+        label->setObjectName(QString::fromUtf8("label"));
+        label->setGeometry(QRect(140, 450, 171, 61));
+        label->setPixmap(QPixmap(QString::fromUtf8("../PROIECT/logo_mic.png")));
+        pushButton_inregistrare = new QPushButton(InregistrareAngajat);
+        pushButton_inregistrare->setObjectName(QString::fromUtf8("pushButton_inregistrare"));
+        pushButton_inregistrare->setGeometry(QRect(150, 340, 120, 40));
         QFont font1;
+        font1.setFamily(QString::fromUtf8("New Roman"));
         font1.setBold(false);
         font1.setItalic(false);
-        pushButton_5->setFont(font1);
-        pushButton_5->setCursor(QCursor(Qt::PointingHandCursor));
-        pushButton_5->setStyleSheet(QString::fromUtf8("background-color: rgb(9, 52, 111);\n"
+        pushButton_inregistrare->setFont(font1);
+        pushButton_inregistrare->setCursor(QCursor(Qt::PointingHandCursor));
+        pushButton_inregistrare->setStyleSheet(QString::fromUtf8("background-color: rgb(9, 52, 111);\n"
 "color: white;\n"
 "font-size: 20px;\n"
 "border-style: outset;\n"
 "border-radius: 20px;\n"
 "font: Times New Roman;"));
-        label_3 = new QLabel(InregistrareAngajat);
-        label_3->setObjectName(QString::fromUtf8("label_3"));
-        label_3->setGeometry(QRect(20, 240, 91, 31));
-        label_3->setFont(font);
-        label_3->setStyleSheet(QString::fromUtf8("background-color: rgb(58, 175, 169);\n"
+        pushButton_inregistrare_2 = new QPushButton(InregistrareAngajat);
+        pushButton_inregistrare_2->setObjectName(QString::fromUtf8("pushButton_inregistrare_2"));
+        pushButton_inregistrare_2->setGeometry(QRect(140, 390, 150, 40));
+        pushButton_inregistrare_2->setFont(font1);
+        pushButton_inregistrare_2->setCursor(QCursor(Qt::PointingHandCursor));
+        pushButton_inregistrare_2->setStyleSheet(QString::fromUtf8("background-color: rgb(9, 52, 111);\n"
 "color: white;\n"
-"border-radius: 10px;\n"
-"font: Times New Roman;\n"
-"font-size: 18px;"));
-        label_3->setAlignment(Qt::AlignCenter);
-        label_4 = new QLabel(InregistrareAngajat);
-        label_4->setObjectName(QString::fromUtf8("label_4"));
-        label_4->setGeometry(QRect(160, 130, 91, 31));
-        label_4->setFont(font);
-        label_4->setStyleSheet(QString::fromUtf8("background-color: rgb(58, 175, 169);\n"
-"color: white;\n"
-"border-radius: 10px;\n"
-"font: Times New Roman;\n"
-"font-size: 18px;"));
-        label_4->setAlignment(Qt::AlignCenter);
-        label_5 = new QLabel(InregistrareAngajat);
-        label_5->setObjectName(QString::fromUtf8("label_5"));
-        label_5->setGeometry(QRect(160, 30, 91, 31));
-        label_5->setFont(font);
-        label_5->setStyleSheet(QString::fromUtf8("background-color: rgb(58, 175, 169);\n"
-"color: white;\n"
-"border-radius: 10px;\n"
-"font: Times New Roman;\n"
-"font-size: 18px;"));
-        label_5->setAlignment(Qt::AlignCenter);
-        label = new QLabel(InregistrareAngajat);
-        label->setObjectName(QString::fromUtf8("label"));
-        label->setGeometry(QRect(140, 390, 171, 61));
-        label->setPixmap(QPixmap(QString::fromUtf8("../PROIECT/logo_mic.png")));
+"font-size: 15px;\n"
+"border-style: outset;\n"
+"border-radius: 20px;\n"
+"font: Times New Roman;"));
 
         retranslateUi(InregistrareAngajat);
 
@@ -131,12 +145,13 @@ public:
     void retranslateUi(QDialog *InregistrareAngajat)
     {
         InregistrareAngajat->setWindowTitle(QCoreApplication::translate("InregistrareAngajat", "Dialog", nullptr));
-        label_2->setText(QCoreApplication::translate("InregistrareAngajat", "Prenume", nullptr));
-        pushButton_5->setText(QCoreApplication::translate("InregistrareAngajat", "\303\216nregistrare", nullptr));
-        label_3->setText(QCoreApplication::translate("InregistrareAngajat", "Nume", nullptr));
-        label_4->setText(QCoreApplication::translate("InregistrareAngajat", "Parola", nullptr));
-        label_5->setText(QCoreApplication::translate("InregistrareAngajat", "Email", nullptr));
+        label_prenume->setText(QCoreApplication::translate("InregistrareAngajat", "Prenume", nullptr));
+        label_nume->setText(QCoreApplication::translate("InregistrareAngajat", "Nume", nullptr));
+        label_parola->setText(QCoreApplication::translate("InregistrareAngajat", "Parol\304\203", nullptr));
+        label_email->setText(QCoreApplication::translate("InregistrareAngajat", "Email", nullptr));
         label->setText(QString());
+        pushButton_inregistrare->setText(QCoreApplication::translate("InregistrareAngajat", "\303\216nregistrare", nullptr));
+        pushButton_inregistrare_2->setText(QCoreApplication::translate("InregistrareAngajat", "Ave\310\233i deja cont?", nullptr));
     } // retranslateUi
 
 };

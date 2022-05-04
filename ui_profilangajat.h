@@ -20,9 +20,9 @@ QT_BEGIN_NAMESPACE
 class Ui_profilAngajat
 {
 public:
-    QLabel *label_header;
-    QPushButton *pushButton_4;
-    QPushButton *pushButton_5;
+    QLabel *label_welcome;
+    QPushButton *pushButton_cv;
+    QPushButton *pushButton_oferte;
     QLabel *label_3;
     QLabel *label_nume;
 
@@ -32,35 +32,35 @@ public:
             profilAngajat->setObjectName(QString::fromUtf8("profilAngajat"));
         profilAngajat->resize(989, 655);
         profilAngajat->setStyleSheet(QString::fromUtf8("background-color: rgb(222, 242, 241);"));
-        label_header = new QLabel(profilAngajat);
-        label_header->setObjectName(QString::fromUtf8("label_header"));
-        label_header->setGeometry(QRect(20, 10, 951, 41));
+        label_welcome = new QLabel(profilAngajat);
+        label_welcome->setObjectName(QString::fromUtf8("label_welcome"));
+        label_welcome->setGeometry(QRect(20, 10, 951, 41));
         QFont font;
         font.setBold(true);
-        label_header->setFont(font);
-        label_header->setStyleSheet(QString::fromUtf8("color: rgb(58, 175, 169);\n"
+        label_welcome->setFont(font);
+        label_welcome->setStyleSheet(QString::fromUtf8("color: rgb(58, 175, 169);\n"
 "font-size: 25px;"));
-        pushButton_4 = new QPushButton(profilAngajat);
-        pushButton_4->setObjectName(QString::fromUtf8("pushButton_4"));
-        pushButton_4->setGeometry(QRect(10, 70, 171, 50));
+        pushButton_cv = new QPushButton(profilAngajat);
+        pushButton_cv->setObjectName(QString::fromUtf8("pushButton_cv"));
+        pushButton_cv->setGeometry(QRect(10, 70, 175, 55));
         QFont font1;
         font1.setFamily(QString::fromUtf8("New Roman"));
         font1.setBold(false);
         font1.setItalic(false);
-        pushButton_4->setFont(font1);
-        pushButton_4->setCursor(QCursor(Qt::PointingHandCursor));
-        pushButton_4->setStyleSheet(QString::fromUtf8("background-color: rgb(58, 175, 169);\n"
+        pushButton_cv->setFont(font1);
+        pushButton_cv->setCursor(QCursor(Qt::PointingHandCursor));
+        pushButton_cv->setStyleSheet(QString::fromUtf8("background-color: rgb(58, 175, 169);\n"
 "color: white;\n"
 "font-size: 20px;\n"
 "border-style: outset;\n"
 "border-radius: 20px;\n"
 "font: Times New Roman;"));
-        pushButton_5 = new QPushButton(profilAngajat);
-        pushButton_5->setObjectName(QString::fromUtf8("pushButton_5"));
-        pushButton_5->setGeometry(QRect(210, 70, 241, 50));
-        pushButton_5->setFont(font1);
-        pushButton_5->setCursor(QCursor(Qt::PointingHandCursor));
-        pushButton_5->setStyleSheet(QString::fromUtf8("background-color: rgb(58, 175, 169);\n"
+        pushButton_oferte = new QPushButton(profilAngajat);
+        pushButton_oferte->setObjectName(QString::fromUtf8("pushButton_oferte"));
+        pushButton_oferte->setGeometry(QRect(210, 70, 245, 55));
+        pushButton_oferte->setFont(font1);
+        pushButton_oferte->setCursor(QCursor(Qt::PointingHandCursor));
+        pushButton_oferte->setStyleSheet(QString::fromUtf8("background-color: rgb(58, 175, 169);\n"
 "color: white;\n"
 "font-size: 20px;\n"
 "border-style: outset;\n"
@@ -87,9 +87,9 @@ public:
     void retranslateUi(QDialog *profilAngajat)
     {
         profilAngajat->setWindowTitle(QCoreApplication::translate("profilAngajat", "Dialog", nullptr));
-        label_header->setText(QCoreApplication::translate("profilAngajat", "Bine ai venit, ", nullptr));
-        pushButton_4->setText(QCoreApplication::translate("profilAngajat", "CV-ul meu", nullptr));
-        pushButton_5->setText(QCoreApplication::translate("profilAngajat", "Caut\304\203 oferte de munc\304\203", nullptr));
+        label_welcome->setText(QCoreApplication::translate("profilAngajat", "Bine ai venit, ", nullptr));
+        pushButton_cv->setText(QCoreApplication::translate("profilAngajat", "CV-ul meu", nullptr));
+        pushButton_oferte->setText(QCoreApplication::translate("profilAngajat", "Caut\304\203 oferte de munc\304\203", nullptr));
         label_3->setText(QCoreApplication::translate("profilAngajat", "Profilul meu", nullptr));
         label_nume->setText(QString());
     } // retranslateUi

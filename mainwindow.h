@@ -2,6 +2,12 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <string>
+#include <qMessageBox>
+#include <vector>
+#include "profiladmin.h"
+#include "profilangajator.h"
+#include "profilangajat.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -12,13 +18,19 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 
 public:
-    MainWindow(QWidget *parent = nullptr);
+    MainWindow(QWidget *parent = nullptr,int r=0);
     ~MainWindow();
+    void logare_user();
 
 private slots:
     void on_pushButton_login_clicked();
 
 private:
     Ui::MainWindow *ui;
+    int rol;
+    profiladmin* profil_admin;
+    profilAngajat* profil_angajat;
+    profilangajator* profil_angajator;
+    std::vector<std::string> verificare_email_parola();
 };
 #endif // MAINWINDOW_H

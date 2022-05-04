@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>tipuri_autentificare</class>
+ <widget class="QDialog" name="tipuri_autentificare">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>570</width>
+    <height>424</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(222, 242, 241);</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>60</y>
+     <width>241</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../PROIECT/logo_mare.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_angajat">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>220</y>
+     <width>280</width>
+     <height>45</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(58, 175, 169);
+color: white;
+border-radius: 10px;
+font-size: 20px;</string>
+   </property>
+   <property name="text">
+    <string>Autentificare ca Angajat</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_angajator">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>280</y>
+     <width>280</width>
+     <height>45</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(58, 175, 169);
+color: white;
+border-radius: 10px;
+font-size: 20px;</string>
+   </property>
+   <property name="text">
+    <string>Autentificare ca Angajator</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_admin">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>340</y>
+     <width>280</width>
+     <height>45</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(58, 175, 169);
+color: white;
+border-radius: 10px;
+font-size: 20px;</string>
+   </property>
+   <property name="text">
+    <string>Autentificare ca Admin</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

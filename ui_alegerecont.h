@@ -23,8 +23,8 @@ public:
     QLabel *label;
     QLabel *label_2;
     QLabel *label_3;
-    QPushButton *pushButton;
-    QPushButton *pushButton_2;
+    QPushButton *angajator;
+    QPushButton *viitor_angajat;
 
     void setupUi(QDialog *AlegereCont)
     {
@@ -50,21 +50,21 @@ public:
         label_3->setFont(font);
         label_3->setStyleSheet(QString::fromUtf8("color: rgb(58, 175, 169);\n"
 "font-size: 17px;"));
-        pushButton = new QPushButton(AlegereCont);
-        pushButton->setObjectName(QString::fromUtf8("pushButton"));
-        pushButton->setGeometry(QRect(110, 180, 245, 45));
-        pushButton->setFont(font);
-        pushButton->setCursor(QCursor(Qt::PointingHandCursor));
-        pushButton->setStyleSheet(QString::fromUtf8("background-color: rgb(58, 175, 169);\n"
+        angajator = new QPushButton(AlegereCont);
+        angajator->setObjectName(QString::fromUtf8("angajator"));
+        angajator->setGeometry(QRect(110, 180, 245, 45));
+        angajator->setFont(font);
+        angajator->setCursor(QCursor(Qt::PointingHandCursor));
+        angajator->setStyleSheet(QString::fromUtf8("background-color: rgb(58, 175, 169);\n"
 "color: white;\n"
 "border-radius: 10px;\n"
 "font-size: 20px;"));
-        pushButton_2 = new QPushButton(AlegereCont);
-        pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
-        pushButton_2->setGeometry(QRect(110, 240, 245, 45));
-        pushButton_2->setFont(font);
-        pushButton_2->setCursor(QCursor(Qt::PointingHandCursor));
-        pushButton_2->setStyleSheet(QString::fromUtf8("background-color: rgb(58, 175, 169);\n"
+        viitor_angajat = new QPushButton(AlegereCont);
+        viitor_angajat->setObjectName(QString::fromUtf8("viitor_angajat"));
+        viitor_angajat->setGeometry(QRect(110, 240, 245, 45));
+        viitor_angajat->setFont(font);
+        viitor_angajat->setCursor(QCursor(Qt::PointingHandCursor));
+        viitor_angajat->setStyleSheet(QString::fromUtf8("background-color: rgb(58, 175, 169);\n"
 "color: white;\n"
 "border-radius: 10px;\n"
 "font-size: 20px;"));
@@ -80,8 +80,8 @@ public:
         label->setText(QString());
         label_2->setText(QCoreApplication::translate("AlegereCont", "Bine a\310\233i venit!", nullptr));
         label_3->setText(QCoreApplication::translate("AlegereCont", "Alege\310\233i tipul de utilizator", nullptr));
-        pushButton->setText(QCoreApplication::translate("AlegereCont", "Angajator", nullptr));
-        pushButton_2->setText(QCoreApplication::translate("AlegereCont", "Viitor angajat", nullptr));
+        angajator->setText(QCoreApplication::translate("AlegereCont", "Angajator", nullptr));
+        viitor_angajat->setText(QCoreApplication::translate("AlegereCont", "Viitor angajat", nullptr));
     } // retranslateUi
 
 };
