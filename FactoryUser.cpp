@@ -1,21 +1,27 @@
-#include "FactoryUser.h"
 
-IUser* FactoryUser::createUserAdmin(vector<string>v)
-{
-	return new Admin(v);
-}
+#include "FactoryUser.h"
+#include "Angajat.h"
+#include"Admin.h"
 
 IUser* FactoryUser::createUserAdmin()
 {
-	return new Admin();
+    IUser*a=new Admin();
+    return nullptr;
 }
 
-IUser* FactoryUser::createUserAngajat(vector<string>v)
+IUser* FactoryUser::createUserAngajat()
 {
-	return new Angajat(v);
+   // return new Angajator;
+    return nullptr;
+
 }
 
-IUser* FactoryUser::createAngajator(vector<string>v)
+IUser* FactoryUser::createAplicant()
 {
-	return new Angajator(v);
+    //Aplicant* a=new Aplicant();
+
+   // return a;
+    return nullptr;
+
 }
+
