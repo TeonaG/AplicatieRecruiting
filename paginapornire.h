@@ -40,7 +40,6 @@ private:
     InregistrareAngajat*inreg_angajat;
     AlegereCont*alegerecont;
     tipuri_autentificare*tipuri_autentif;
-    filtru*filtru_cautare;
 };
 
 #endif // PAGINAPORNIRE_H

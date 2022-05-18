@@ -1,4 +1,5 @@
 #include "parser.h"
+#include <QDebug>
 parser*parser::instance=nullptr;
 
 parser&parser::getInstance()
@@ -23,8 +24,10 @@ std::string parser::parse_string(std::vector<std::string> v,char delim)
     for(int i=0;i<v.size();i++)
     {
         str+=v[i];
+        //qDebug()<<QString::fromStdString(str);
         if(i!=v.size()-1) str+=delim;
     }
+    str[str.length()]=0;
     return str;
 }
 

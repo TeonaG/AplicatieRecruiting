@@ -46,7 +46,7 @@ public:
 "border-radius: 10px;"));
         label_prenume = new QLabel(InregistrareAngajat);
         label_prenume->setObjectName(QString::fromUtf8("label_prenume"));
-        label_prenume->setGeometry(QRect(230, 240, 91, 31));
+        label_prenume->setGeometry(QRect(264, 240, 91, 31));
         QFont font;
         font.setFamily(QString::fromUtf8("New Roman"));
         font.setBold(false);
@@ -78,7 +78,7 @@ public:
 "border-radius: 10px;"));
         label_nume = new QLabel(InregistrareAngajat);
         label_nume->setObjectName(QString::fromUtf8("label_nume"));
-        label_nume->setGeometry(QRect(20, 240, 91, 31));
+        label_nume->setGeometry(QRect(52, 240, 91, 31));
         label_nume->setFont(font);
         label_nume->setStyleSheet(QString::fromUtf8("background-color: rgb(58, 175, 169);\n"
 "color: white;\n"
@@ -127,7 +127,7 @@ public:
 "font: Times New Roman;"));
         pushButton_inregistrare_2 = new QPushButton(InregistrareAngajat);
         pushButton_inregistrare_2->setObjectName(QString::fromUtf8("pushButton_inregistrare_2"));
-        pushButton_inregistrare_2->setGeometry(QRect(140, 390, 150, 40));
+        pushButton_inregistrare_2->setGeometry(QRect(135, 390, 150, 40));
         pushButton_inregistrare_2->setFont(font1);
         pushButton_inregistrare_2->setCursor(QCursor(Qt::PointingHandCursor));
         pushButton_inregistrare_2->setStyleSheet(QString::fromUtf8("background-color: rgb(9, 52, 111);\n"

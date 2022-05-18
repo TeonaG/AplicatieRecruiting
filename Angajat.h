@@ -2,9 +2,8 @@
 #include <vector>
 #include <string>
 #include "User.h"
-//#include "conexiune_server.h"
 
-class Angajat :public User
+class Angajat:public User
 {
 private:
 	string nume;

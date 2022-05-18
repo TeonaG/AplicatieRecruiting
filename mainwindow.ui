@@ -162,6 +162,28 @@ font-size: 18px;</string>
       <pixmap>../PROIECT/logo_mic.png</pixmap>
      </property>
     </widget>
+    <widget class="QPushButton" name="pushButton_afisare">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>170</y>
+       <width>85</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(9, 52, 111);
+color: white;
+border-style: outset;
+border-radius: 10px;
+font: Times New Roman;
+font-size:18px;
+</string>
+     </property>
+     <property name="text">
+      <string>Afisare</string>
+     </property>
+    </widget>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -170,7 +192,7 @@ font-size: 18px;</string>
      <x>0</x>
      <y>0</y>
      <width>405</width>
-     <height>22</height>
+     <height>26</height>
     </rect>
    </property>
   </widget>

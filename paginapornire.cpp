@@ -51,7 +51,7 @@ void PaginaPornire::on_pushButton_4_clicked()
 void PaginaPornire::on_pushButton_cautare_clicked()
 {
     hide();
-    filtru_cautare=new filtru();
-    filtru_cautare->show();
+    tipuri_autentif=new tipuri_autentificare(this);
+    tipuri_autentif->show();
 }
 

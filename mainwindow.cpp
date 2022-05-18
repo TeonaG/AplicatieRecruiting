@@ -11,6 +11,7 @@ MainWindow::MainWindow(QWidget *parent,int r)
     , ui(new Ui::MainWindow),rol(r)
 {
     ui->setupUi(this);
+    ui->lineEdit_parola->setEchoMode(QLineEdit::Password);
 }
 
 MainWindow::~MainWindow()
@@ -18,9 +19,8 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-std::vector<std::string> MainWindow::verificare_email_parola()
+std::vector<std::string> MainWindow::verificare_email_parola(Client&client)
 {
-    Client client;
     std::string email = ui->lineEdit_email->text().toStdString();
     std::string parola = ui->lineEdit_parola->text().toStdString();
     std::string r = std::to_string(rol);
@@ -48,7 +48,7 @@ void MainWindow::logare_user()
     std::string r = std::to_string(rol);
     std::vector<std::string> v,w;
 
-    w=this->verificare_email_parola();
+    w=this->verificare_email_parola(client);
 
     if (w[0].find("Date incorecte")!=std::string::npos) //daca perechea nu exista
     {
@@ -56,14 +56,16 @@ void MainWindow::logare_user()
     }
   else
     {
-        hide();
-        //w va fi de forma 1,nume,prenume etc. luate din baza de date
-        v.clear();
+        //w va fi de forma nume,prenume etc. luate din baza de date
 
-        v.push_back("5");
+        v.clear();
+        v.push_back("3");
         v.push_back(email);
         v.push_back(parola);
+        v.push_back(r);
+
         //avem nevoie de datele userului pentru a crea profilul acestuia
+        //daca rolul este 1 sau 3 am nevoie de nume,prenume, iar daca rolul este 2,am nevoie de numele companiei
 
         QString str=QString::fromStdString(parser::getInstance().parse_string(v,'/'));
 
@@ -72,6 +74,7 @@ void MainWindow::logare_user()
         std::string s=str.toStdString();
 
         //punem datele userului intr-un vector
+         w.clear();
          w=parser::getInstance().unparse_string(s,'/');
 
           v.clear();
@@ -80,25 +83,30 @@ void MainWindow::logare_user()
 
         if (rol == 1)
        {
+            hide();
             v.push_back(w[0]);
             v.push_back(w[1]);
             IUser* user = FactoryUser::createUserAdmin(v);
+            user->setUserID(w[2]);
             profil_admin = new profiladmin(this, user);
             this->profil_admin->show();
        }
         else if (rol == 2)
         {
+            hide();
             v.push_back(w[0]);
             IUser* user = FactoryUser::createAngajator(v);
+            user->setUserID(w[1]);
             profil_angajator = new profilangajator(this, user);
             this->profil_angajator->show();
         }
         else if (rol == 3)
         {
+            hide();
             v.push_back(w[0]);
             v.push_back(w[1]);
-
             IUser* user = FactoryUser::createUserAngajat(v);
+            user->setUserID(w[2]);
             profil_angajat = new profilAngajat(this, user);
             this->profil_angajat->show();
         }
@@ -118,5 +126,11 @@ void MainWindow::on_pushButton_login_clicked()
     else
         this->logare_user();
 
+}
+
+
+void MainWindow::on_pushButton_afisare_clicked()
+{
+    ui->lineEdit_parola->setEchoMode(QLineEdit::Normal);
 }
 

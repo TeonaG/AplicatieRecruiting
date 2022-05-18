@@ -4,6 +4,7 @@
 #include <QDialog>
 #include "tipuri_autentificare.h"
 #include "mainwindow.h"
+#include "client.h"
 
 namespace Ui {
 class InregistrareAngajator;
@@ -16,7 +17,7 @@ class InregistrareAngajator : public QDialog
 public:
     explicit InregistrareAngajator(QWidget *parent = nullptr);
     ~InregistrareAngajator();
-    void inregistreaza_angajator(std::vector<std::string>);
+    void inregistreaza_angajator(std::vector<std::string>,Client&);
 
 private slots:
     void on_pushButton_inregistrare_clicked();

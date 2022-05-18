@@ -7,7 +7,7 @@ Client::Client(QObject *parent) : QObject(parent)
     connect(&_socket, &QTcpSocket::errorOccurred, this, &Client::onErrorOccurred);
     connect(&_socket, &QTcpSocket::readyRead, this, &Client::onReadyRead);
     this->conectare_la_server("172.16.7.50","54010");
-    //this->conectare_la_server("172.16.8.185","54010");
+    //this->conectare_la_server("192.168.18.241","54010");
 
 }
 
@@ -31,7 +31,6 @@ QString Client::primire_mesaj()
    // str=_socket.readAll();
     //QString s(str);
     QString s=QString::fromStdString(str.toStdString());
-    qDebug()<<s;
     return s;
 }
 

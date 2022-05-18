@@ -25,6 +25,7 @@ public:
     QPushButton *pushButton_cv;
     QPushButton *pushButton_recenzii;
     QLabel *label_3;
+    QPushButton *pushButton_adauga_job;
 
     void setupUi(QDialog *profilangajator)
     {
@@ -83,6 +84,17 @@ public:
         label_3->setFont(font);
         label_3->setStyleSheet(QString::fromUtf8("color: rgb(58, 175, 169);\n"
 "font-size: 25px;"));
+        pushButton_adauga_job = new QPushButton(profilangajator);
+        pushButton_adauga_job->setObjectName(QString::fromUtf8("pushButton_adauga_job"));
+        pushButton_adauga_job->setGeometry(QRect(760, 60, 181, 50));
+        pushButton_adauga_job->setFont(font1);
+        pushButton_adauga_job->setCursor(QCursor(Qt::PointingHandCursor));
+        pushButton_adauga_job->setStyleSheet(QString::fromUtf8("background-color: rgb(9, 52, 111);\n"
+"color: white;\n"
+"font-size: 20px;\n"
+"border-style: outset;\n"
+"border-radius: 20px;\n"
+"font: Times New Roman;"));
 
         retranslateUi(profilangajator);
 
@@ -97,6 +109,7 @@ public:
         pushButton_cv->setText(QCoreApplication::translate("profilangajator", "CV-uri primite", nullptr));
         pushButton_recenzii->setText(QCoreApplication::translate("profilangajator", "Recenzii primite", nullptr));
         label_3->setText(QCoreApplication::translate("profilangajator", "Profilul meu", nullptr));
+        pushButton_adauga_job->setText(QCoreApplication::translate("profilangajator", "Adaug\304\203 job", nullptr));
     } // retranslateUi
 
 };

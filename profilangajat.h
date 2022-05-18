@@ -14,7 +14,7 @@ class profilAngajat : public QDialog
     Q_OBJECT
 
 public:
-    explicit profilAngajat(QWidget *parent = nullptr,int id_cv=0);
+    explicit profilAngajat(QWidget *parent = nullptr,IUser*user=nullptr);
     ~profilAngajat();
 
 private slots:
@@ -24,8 +24,8 @@ private slots:
 
 private:
     Ui::profilAngajat *ui;
-    int id_cv;
-    CV_Angajat* cv_angajat;
+    IUser* user;
+    CV_Angajat* cv;
     filtru*oferte_munca;
 };
 

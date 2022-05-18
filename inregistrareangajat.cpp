@@ -17,31 +17,25 @@ InregistrareAngajat::~InregistrareAngajat()
     delete ui;
 }
 
-void InregistrareAngajat::inregistreaza_angajat(std::vector<std::string>v)
+void InregistrareAngajat::inregistreaza_angajat(std::vector<std::string>v,Client&client)
 {
     Admin* admin = new Admin();
-    admin->registerNewUser(v);
+    admin->registerNewUser(v,client);
     delete admin;
 }
 
 void InregistrareAngajat::on_pushButton_inregistrare_clicked()
 {
     std::vector<std::string> v,w;
-    v.push_back("1");
     string email = ui->lineEdit_email->text().toStdString();
     string parola = ui->lineEdit_parola->text().toStdString();
     string nume = ui->lineEdit_nume->text().toStdString();
     string prenume = ui->lineEdit_prenume->text().toStdString();
-    v.push_back(email);
-    v.push_back(parola);
-    v.push_back(nume);
-    v.push_back(prenume);
-    v.push_back("3");
 
     if (email == "" || parola == "" || nume == "" || prenume=="")
     {
         QMessageBox::warning(this, "Eroare", "Toate campurile sunt obligatorii!");
-        exit(-1);
+        //exit(-1);
     }
     else
     {
@@ -65,7 +59,17 @@ void InregistrareAngajat::on_pushButton_inregistrare_clicked()
              exit(-1);
          }
          else
-         this->inregistreaza_angajat(v);
+
+         {
+             v.clear();
+             v.push_back("1");
+             v.push_back(email);
+             v.push_back(parola);
+             v.push_back(nume);
+             v.push_back(prenume);
+             v.push_back("3");
+             this->inregistreaza_angajat(v,client);
+         }
     }
 
     hide();

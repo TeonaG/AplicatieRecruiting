@@ -22,18 +22,18 @@ class Ui_filtru
 {
 public:
     QLabel *label_5;
-    QComboBox *comboBox_3;
-    QComboBox *comboBox_6;
+    QComboBox *comboBox_angajator;
+    QComboBox *comboBox_judet;
     QPushButton *pushButton_cautare;
-    QComboBox *comboBox_5;
+    QComboBox *comboBox_oras;
     QLabel *label;
     QLabel *label_2;
-    QComboBox *comboBox;
+    QComboBox *comboBox_domeniu;
     QLabel *label_3;
     QLabel *label_email;
     QLabel *label_7;
-    QComboBox *comboBox_2;
-    QComboBox *comboBox_4;
+    QComboBox *comboBox_functie;
+    QComboBox *comboBox_program_lucru;
     QLabel *label_6;
     QLabel *label_4;
 
@@ -52,12 +52,12 @@ public:
 "font: Times New Roman;\n"
 "font-size: 20px;"));
         label_5->setAlignment(Qt::AlignCenter);
-        comboBox_3 = new QComboBox(filtru);
-        comboBox_3->setObjectName(QString::fromUtf8("comboBox_3"));
-        comboBox_3->setGeometry(QRect(820, 190, 201, 21));
-        comboBox_6 = new QComboBox(filtru);
-        comboBox_6->setObjectName(QString::fromUtf8("comboBox_6"));
-        comboBox_6->setGeometry(QRect(90, 390, 201, 21));
+        comboBox_angajator = new QComboBox(filtru);
+        comboBox_angajator->setObjectName(QString::fromUtf8("comboBox_angajator"));
+        comboBox_angajator->setGeometry(QRect(820, 190, 201, 21));
+        comboBox_judet = new QComboBox(filtru);
+        comboBox_judet->setObjectName(QString::fromUtf8("comboBox_judet"));
+        comboBox_judet->setGeometry(QRect(90, 390, 201, 21));
         pushButton_cautare = new QPushButton(filtru);
         pushButton_cautare->setObjectName(QString::fromUtf8("pushButton_cautare"));
         pushButton_cautare->setGeometry(QRect(410, 470, 285, 65));
@@ -73,9 +73,9 @@ public:
 "border-style: outset;\n"
 "border-radius: 20px;\n"
 "font: Times New Roman;"));
-        comboBox_5 = new QComboBox(filtru);
-        comboBox_5->setObjectName(QString::fromUtf8("comboBox_5"));
-        comboBox_5->setGeometry(QRect(450, 390, 201, 21));
+        comboBox_oras = new QComboBox(filtru);
+        comboBox_oras->setObjectName(QString::fromUtf8("comboBox_oras"));
+        comboBox_oras->setGeometry(QRect(450, 390, 201, 21));
         label = new QLabel(filtru);
         label->setObjectName(QString::fromUtf8("label"));
         label->setGeometry(QRect(90, 140, 200, 35));
@@ -94,9 +94,10 @@ public:
 "font: Times New Roman;\n"
 "font-size: 20px;"));
         label_2->setAlignment(Qt::AlignCenter);
-        comboBox = new QComboBox(filtru);
-        comboBox->setObjectName(QString::fromUtf8("comboBox"));
-        comboBox->setGeometry(QRect(90, 190, 201, 21));
+        comboBox_domeniu = new QComboBox(filtru);
+        comboBox_domeniu->setObjectName(QString::fromUtf8("comboBox_domeniu"));
+        comboBox_domeniu->setGeometry(QRect(90, 190, 201, 21));
+        comboBox_domeniu->setStyleSheet(QString::fromUtf8("background-color: white;"));
         label_3 = new QLabel(filtru);
         label_3->setObjectName(QString::fromUtf8("label_3"));
         label_3->setGeometry(QRect(820, 140, 200, 35));
@@ -127,12 +128,12 @@ public:
         label_7->setObjectName(QString::fromUtf8("label_7"));
         label_7->setGeometry(QRect(480, 570, 161, 101));
         label_7->setPixmap(QPixmap(QString::fromUtf8("../PROIECT/logo_mic.png")));
-        comboBox_2 = new QComboBox(filtru);
-        comboBox_2->setObjectName(QString::fromUtf8("comboBox_2"));
-        comboBox_2->setGeometry(QRect(450, 190, 201, 21));
-        comboBox_4 = new QComboBox(filtru);
-        comboBox_4->setObjectName(QString::fromUtf8("comboBox_4"));
-        comboBox_4->setGeometry(QRect(820, 390, 201, 21));
+        comboBox_functie = new QComboBox(filtru);
+        comboBox_functie->setObjectName(QString::fromUtf8("comboBox_functie"));
+        comboBox_functie->setGeometry(QRect(450, 190, 201, 21));
+        comboBox_program_lucru = new QComboBox(filtru);
+        comboBox_program_lucru->setObjectName(QString::fromUtf8("comboBox_program_lucru"));
+        comboBox_program_lucru->setGeometry(QRect(820, 390, 201, 21));
         label_6 = new QLabel(filtru);
         label_6->setObjectName(QString::fromUtf8("label_6"));
         label_6->setGeometry(QRect(820, 340, 200, 35));

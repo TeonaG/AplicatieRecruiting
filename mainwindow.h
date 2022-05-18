@@ -8,6 +8,7 @@
 #include "profiladmin.h"
 #include "profilangajator.h"
 #include "profilangajat.h"
+#include "client.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -25,12 +26,14 @@ public:
 private slots:
     void on_pushButton_login_clicked();
 
+    void on_pushButton_afisare_clicked();
+
 private:
     Ui::MainWindow *ui;
     int rol;
     profiladmin* profil_admin;
     profilAngajat* profil_angajat;
     profilangajator* profil_angajator;
-    std::vector<std::string> verificare_email_parola();
+    std::vector<std::string> verificare_email_parola(Client&);
 };
 #endif // MAINWINDOW_H

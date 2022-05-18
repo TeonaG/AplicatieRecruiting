@@ -1,6 +1,7 @@
 #ifndef INREGISTRAREANGAJAT_H
 #define INREGISTRAREANGAJAT_H
 #include "IUser.h"
+#include "client.h"
 #include <QDialog>
 #include "tipuri_autentificare.h"
 #include "mainwindow.h"
@@ -15,7 +16,7 @@ class InregistrareAngajat : public QDialog
 public:
     explicit InregistrareAngajat(QWidget *parent = nullptr);
     ~InregistrareAngajat();
-    void inregistreaza_angajat(std::vector<std::string>);
+    void inregistreaza_angajat(std::vector<std::string>,Client&);
 
 private slots:
     void on_pushButton_inregistrare_clicked();

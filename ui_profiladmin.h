@@ -21,6 +21,7 @@ class Ui_profiladmin
 public:
     QLabel *label_welcome;
     QLabel *label_3;
+    QLabel *label_nume;
 
     void setupUi(QDialog *profiladmin)
     {
@@ -42,6 +43,9 @@ public:
         label_3->setFont(font);
         label_3->setStyleSheet(QString::fromUtf8("color: rgb(58, 175, 169);\n"
 "font-size: 25px;"));
+        label_nume = new QLabel(profiladmin);
+        label_nume->setObjectName(QString::fromUtf8("label_nume"));
+        label_nume->setGeometry(QRect(10, 170, 861, 51));
 
         retranslateUi(profiladmin);
 
@@ -53,6 +57,7 @@ public:
         profiladmin->setWindowTitle(QCoreApplication::translate("profiladmin", "Dialog", nullptr));
         label_welcome->setText(QCoreApplication::translate("profiladmin", "Bine ai venit, ", nullptr));
         label_3->setText(QCoreApplication::translate("profiladmin", "Profilul meu", nullptr));
+        label_nume->setText(QString());
     } // retranslateUi
 
 };

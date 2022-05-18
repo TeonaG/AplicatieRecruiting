@@ -15,3 +15,11 @@ profilangajator::~profilangajator()
 {
     delete ui;
 }
+
+void profilangajator::on_pushButton_adauga_job_clicked()
+{
+   // hide();
+    formular=new formular_adaugare_job();
+    formular->show();
+}
+

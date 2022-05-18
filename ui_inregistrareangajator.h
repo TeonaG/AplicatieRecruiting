@@ -85,7 +85,7 @@ public:
         label->setPixmap(QPixmap(QString::fromUtf8("../PROIECT/logo_mic.png")));
         label_companie = new QLabel(InregistrareAngajator);
         label_companie->setObjectName(QString::fromUtf8("label_companie"));
-        label_companie->setGeometry(QRect(140, 220, 151, 31));
+        label_companie->setGeometry(QRect(143, 220, 151, 31));
         label_companie->setFont(font);
         label_companie->setStyleSheet(QString::fromUtf8("background-color: rgb(58, 175, 169);\n"
 "color: white;\n"

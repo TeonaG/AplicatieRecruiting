@@ -12,7 +12,6 @@ profilAngajat::profilAngajat(QWidget *parent,IUser*u) :
     std::string header = "Bine ai venit, " + v[0] + " " + v[1];
     ui->label_welcome->setText(header.c_str());
     ui->label_nume->setText((v[0]+" "+v[1]).c_str());
-
 }
 
 profilAngajat::~profilAngajat()
@@ -23,14 +22,14 @@ profilAngajat::~profilAngajat()
 void profilAngajat::on_pushButton_oferte_clicked()
 {
     hide();
-    this->oferte_munca=new filtru();
+    this->oferte_munca=new filtru(this,this->user->getUserID());
     oferte_munca->show();
 }
 
 void profilAngajat::on_pushButton_cv_clicked()
 {
-   //hide();
-    cv_angajat = new CV_Angajat();
-    cv_angajat->show();
+    hide();
+    cv = new CV_Angajat(this,this->user->getUserID());
+    cv->show();
 }
 

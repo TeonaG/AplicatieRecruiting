@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>profilangajator</class>
- <widget class="QDialog" name="profilangajator">
+ <class>adaugare_recenzie</class>
+ <widget class="QDialog" name="adaugare_recenzie">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1003</width>
-    <height>626</height>
+    <width>770</width>
+    <height>584</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,13 +16,13 @@
   <property name="styleSheet">
    <string notr="true">background-color: rgb(222, 242, 241);</string>
   </property>
-  <widget class="QPushButton" name="pushButton_cv">
+  <widget class="QLabel" name="label_email">
    <property name="geometry">
     <rect>
-     <x>260</x>
-     <y>60</y>
-     <width>181</width>
-     <height>50</height>
+     <x>220</x>
+     <y>20</y>
+     <width>320</width>
+     <height>45</height>
     </rect>
    </property>
    <property name="font">
@@ -31,30 +31,32 @@
      <pointsize>-1</pointsize>
      <italic>false</italic>
      <bold>false</bold>
+     <underline>false</underline>
+     <strikeout>false</strikeout>
+     <kerning>true</kerning>
     </font>
-   </property>
-   <property name="cursor">
-    <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(58, 175, 169);
 color: white;
-font-size: 20px;
-border-style: outset;
-border-radius: 20px;
-font: Times New Roman;</string>
+border-radius: 10px;
+font: Times New Roman;
+font-size: 23px;</string>
    </property>
    <property name="text">
-    <string>CV-uri primite</string>
+    <string>Adaugă o recenzie</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_oferte">
+  <widget class="QLabel" name="label_email_2">
    <property name="geometry">
     <rect>
-     <x>20</x>
-     <y>60</y>
-     <width>181</width>
-     <height>50</height>
+     <x>310</x>
+     <y>90</y>
+     <width>141</width>
+     <height>35</height>
     </rect>
    </property>
    <property name="font">
@@ -63,30 +65,32 @@ font: Times New Roman;</string>
      <pointsize>-1</pointsize>
      <italic>false</italic>
      <bold>false</bold>
+     <underline>false</underline>
+     <strikeout>false</strikeout>
+     <kerning>true</kerning>
     </font>
-   </property>
-   <property name="cursor">
-    <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(58, 175, 169);
 color: white;
-font-size: 20px;
-border-style: outset;
-border-radius: 20px;
-font: Times New Roman;</string>
+border-radius: 10px;
+font: Times New Roman;
+font-size: 20px;</string>
    </property>
    <property name="text">
-    <string>Ofertele noastre</string>
+    <string>Notă</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_recenzii">
+  <widget class="QLabel" name="label_email_3">
    <property name="geometry">
     <rect>
-     <x>510</x>
-     <y>60</y>
-     <width>181</width>
-     <height>50</height>
+     <x>310</x>
+     <y>190</y>
+     <width>141</width>
+     <height>35</height>
     </rect>
    </property>
    <property name="font">
@@ -95,76 +99,76 @@ font: Times New Roman;</string>
      <pointsize>-1</pointsize>
      <italic>false</italic>
      <bold>false</bold>
+     <underline>false</underline>
+     <strikeout>false</strikeout>
+     <kerning>true</kerning>
     </font>
-   </property>
-   <property name="cursor">
-    <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(58, 175, 169);
 color: white;
-font-size: 20px;
-border-style: outset;
-border-radius: 20px;
-font: Times New Roman;</string>
+border-radius: 10px;
+font: Times New Roman;
+font-size: 20px;</string>
    </property>
    <property name="text">
-    <string>Recenzii primite</string>
+    <string>Comentariu</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="label_3">
+  <widget class="QLineEdit" name="lineEdit_nota">
    <property name="geometry">
     <rect>
-     <x>20</x>
-     <y>130</y>
-     <width>161</width>
-     <height>41</height>
+     <x>310</x>
+     <y>140</y>
+     <width>141</width>
+     <height>34</height>
     </rect>
    </property>
-   <property name="font">
-    <font>
-     <pointsize>-1</pointsize>
-     <bold>true</bold>
-    </font>
-   </property>
    <property name="styleSheet">
-    <string notr="true">color: rgb(58, 175, 169);
-font-size: 25px;</string>
-   </property>
-   <property name="text">
-    <string>Profilul meu</string>
+    <string notr="true">background-color: white;
+border-radius: 10px;</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_welcome">
+  <widget class="QLineEdit" name="lineEdit_comentariu">
    <property name="geometry">
     <rect>
-     <x>20</x>
-     <y>10</y>
-     <width>951</width>
-     <height>41</height>
+     <x>110</x>
+     <y>240</y>
+     <width>541</width>
+     <height>191</height>
     </rect>
    </property>
-   <property name="font">
-    <font>
-     <pointsize>-1</pointsize>
-     <bold>true</bold>
-    </font>
-   </property>
    <property name="styleSheet">
-    <string notr="true">color: rgb(58, 175, 169);
-font-size: 25px;</string>
-   </property>
-   <property name="text">
-    <string>Bine ai venit, </string>
+    <string notr="true">background-color: white;
+border-radius: 10px;</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_adauga_job">
+  <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>760</x>
-     <y>60</y>
-     <width>181</width>
-     <height>50</height>
+     <x>320</x>
+     <y>500</y>
+     <width>141</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../PROIECT/logo_mic.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_trimite">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>450</y>
+     <width>120</width>
+     <height>40</height>
     </rect>
    </property>
    <property name="font">
@@ -187,7 +191,7 @@ border-radius: 20px;
 font: Times New Roman;</string>
    </property>
    <property name="text">
-    <string>Adaugă job</string>
+    <string>Trimite</string>
    </property>
   </widget>
  </widget>
