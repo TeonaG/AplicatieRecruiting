@@ -6,9 +6,8 @@
 class User : public IUser
 {
 protected:
-    int id;
+    string id;
     int rol;
-    //static int ID;
     string parola;
     string email;
     bool status;
@@ -19,13 +18,13 @@ public:
     void setEmail(string email) override { this->email = email; }
     void setParola(string parola) override { this->parola = parola; }
     void setDataInrolare(string data) override { this->DataInrolare = data; }
-    void setUserID(int nr) override { this->id = nr; }
-    // void setConexiune(string nume, string prenume, string email, string data, int id, int rol) override;
+    void setUserID(string id) override { this->id = id; }
     void setStatus() override { this->status = true; }
     string getEmail() const override { return this->email; }
     string  getDataInrolare() const override { return this->DataInrolare; }
     int getRol() const override { return this->rol; }
-    int getUserID() const override { return this->id; }
+    string getUserID() const override { return this->id; }
     bool getConnectionStatus() const override { return this->status; }
-    virtual ~User() {}
+    virtual ~User(){}
 };
+
