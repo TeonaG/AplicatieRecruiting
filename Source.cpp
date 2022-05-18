@@ -11,7 +11,7 @@
 #include <iostream>
 #include <thread>
 #include<mysql.h>
-//#include "Server.h"
+
 #include "parser.h"
 #include "sql.h"
 #pragma comment (lib, "Ws2_32.lib")
@@ -47,31 +47,64 @@ void Listenear_MessageReceived(CTcpListener* listener, int client, string msj);
 
 
 
-
-
 void main()
 {
 
 	CTcpListener server("172.16.7.50", 54010, Listenear_MessageReceived);
+		//CTcpListener server("192.168.18.241", 54010, Listenear_MessageReceived);
 
 	SQLManager& sql = SQLManager::getInstance();
-	//if (sql.inregistrareAngajator("oanggga", "dhhhdd", "dddjd") == true)
+	//if (sql.inregistrareAngajator("dposo", "ss2sss", "123") == true)
 	//	cout << "da";
 	//else
 	//	cout << "nu";
 
-	if (sql.autentificareUser("mateidana@yahoo.com","pot") == true)
-		cout << "da";
-	else
-		cout << "nu";
+	//if (sql.autentificareUser("mateidana@yahoo.com","pot") == true)
+	//	cout << "da";
+	//else
+	//	cout << "nu";
+	/*vector<string>vect = sql.dateuser("COMPANIE","Fff","2");
 
+	////cout << vect[0];*/
+	//if (sql.inregistrareAngajat("pot", "ddd", "Dyhhydyyyyd", "dddd") == true)
+	//	cout << "da";
+	//else cout << "nu";
+
+	//vector<string>v = sql.dateuser("EMAIL", "PAROLA", "3");
+	//cout << v[0] << endl;
+	//cout << v[1] << endl;
+	//cout << v[2] << endl;
+	//vector<string>data = sql.SendCV("21");
+	//cout << data[1];
+	//vector<string>vect=sql.SendCV
+
+
+	// sql.inregistrareCv("22", "dddd", "dddddd", "Ddddd", "Ddddd", "Ddddd", "Ddddd", "Ddddd", "Ddddd", "Ddddd", "Ddddd", "Ddddd", "Ddddd", "Ddddd", "Ddddd", "Ddddd", "Ddddd", "Ddddd", "Ddddd");
 	
+	//sql.addjob("ddd", "Ddd", "Ddd", "Dddd", "DDDddd", "Dddd");
+
+	//sql.addRecenzie("jjjff", "Este bine");
+
+	;
+
+	//vector<string>v = sql.filtrare("IT", "Vrancea", "Focsani");
+	//for (int k = 0; k < v.size(); k++)
+	//	cout << v[k] << " ";
+	//string a = sql.SendId("andresilv");
+
+	//cout << a;
+
+
 
 	if (server.Init())
 	{
 		std::cout << "server is running" << std::endl;
 		server.Run();
 	}
+
+
+
+
 }
 
 void Listenear_MessageReceived(CTcpListener* listener, int client, string msj)

@@ -5,32 +5,29 @@ using namespace std;
 class ICV
 {
 public:
-	virtual string getTel() const = 0;
-	virtual	string getNume() const = 0;
-	virtual string getPrenume() const = 0;
-	virtual string getEmail() const = 0;
-	virtual string getAdresa() const = 0;
-	virtual string getJudet() const = 0;
-	virtual string getOras() const = 0;
-	virtual string getDataNastere() const = 0;
-	virtual string getLocStudii() const = 0;
+	virtual int getIdCV() = 0;
+	virtual string getCat() = 0;
+	virtual string getTel() = 0;
+	virtual	string getNume() = 0;
+	virtual string getPrenume() = 0;
+	virtual string getLiceu() =0 ;
+	virtual string getexperienta() = 0;
+	virtual string getDomeniuactivare() = 0;
+	virtual int getidAngajat()= 0;
+	virtual string getAlteinformatii() = 0;
+	virtual string getStudiiSuperioare()= 0;
 
-	virtual void setTel(string) = 0;
-	virtual void setNume(string) = 0;
-	virtual void setPrenume(string) = 0;
-	virtual void setStudii(string) = 0;
-	virtual void setEmail(string) = 0;
-	virtual void setAdresa(string) = 0;
-	virtual void setJudet(string) = 0;
-	virtual void setOras(string) = 0;
-	virtual void setDataNastere(string) = 0;
-	virtual void setLocStudii(string) = 0;
-	virtual void setInstitutie(string) = 0;
-	virtual void setPerioada_inceput_studii(string) = 0;
-	virtual void setPerioada_final_studii(string) = 0;
-	virtual void setFunctiaOcupata(string) = 0;
-	virtual void setPerioada_inceput_functie(string) = 0;
-	virtual void setPerioada_final_functie(string) = 0;
-	virtual void setDomeniu(string) = 0;
+	virtual void setIdCv() = 0;;
+	virtual void setCat(string cat) = 0;
+	virtual void setTel(string tel) = 0;
+	virtual void setNume(string nume) = 0;
+	virtual void setPrenume(string pren) = 0;
+	virtual void setLiceu(string lic) = 0;
+	virtual void setExperienta(string exp) = 0;
+	virtual void setDomeniu(string domeniu) = 0;
+	virtual void setAlteInf(string inf) = 0;
+	virtual void setStudi(string std) = 0;
+	
 };
+
 

@@ -13,8 +13,8 @@ class IUser;
 class FactoryUser
 {
 public:
-	static IUser* createUserAdmin(vector<string>);
 	static IUser* createUserAdmin();
-	static IUser* createUserAngajat(vector<string>);
-	static IUser* createAngajator(vector<string>);
+	static IUser* createUserAngajat();
+	static IUser* createAplicant();
+
 };
